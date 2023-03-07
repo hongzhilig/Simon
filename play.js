@@ -1,11 +1,11 @@
-const btnDescription = [
+const btnDescriptions = [
     { file: 'sound1.mp3', hue: 120 },
     { file: 'sound2.mp3', hue: 0 },
     { file: 'sound3.mp3', hue: 60 },
     { file: 'sound4.mp3', hue: 240 },
-];
-
-class Button {
+  ];
+  
+  class Button {
     constructor(description, el) {
       this.el = el;
       this.hue = description.hue;
@@ -176,3 +176,4 @@ class Button {
   function loadSound(filename) {
     return new Audio('assets/' + filename);
   }
+  
